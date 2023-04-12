@@ -640,8 +640,11 @@ int main(int argc, char *argv[])
     if (!qEnvironmentVariableIsSet("QT_QUICK_CONTROLS_MATERIAL_THEME")) {
         qputenv("QT_QUICK_CONTROLS_MATERIAL_THEME", "Dark");
     }
+    if (!qEnvironmentVariableIsSet("QT_QUICK_CONTROLS_MATERIAL_PRIMARY")) {
+        qputenv("QT_QUICK_CONTROLS_MATERIAL_PRIMARY", "#ffed00");
+    }
     if (!qEnvironmentVariableIsSet("QT_QUICK_CONTROLS_MATERIAL_ACCENT")) {
-        qputenv("QT_QUICK_CONTROLS_MATERIAL_ACCENT", "Purple");
+        qputenv("QT_QUICK_CONTROLS_MATERIAL_ACCENT", "#ffed00");
     }
     if (!qEnvironmentVariableIsSet("QT_QUICK_CONTROLS_MATERIAL_VARIANT")) {
         qputenv("QT_QUICK_CONTROLS_MATERIAL_VARIANT", "Dense");
