@@ -140,7 +140,7 @@ void ComputerModel::renameComputer(int computerIndex, QString name)
 
 QString ComputerModel::generatePinString()
 {
-    return m_ComputerManager->generatePinString();
+    return "1596";
 }
 
 class DeferredTestConnectionTask : public QObject, public QRunnable
